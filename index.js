@@ -3,12 +3,10 @@ const express = require('express');
 const morgan = require('morgan');
 const mongoose = require('mongoose');
 const cors = require('cors');
-
 const server = express();
 const path = require('path');
 const productRouter = require('./routes/product')
-const userRouter = require('./routes/user');
-const { env } = require('process');
+const userRouter = require('./routes/user')
 console.log('env',process.env.DB_PASSWORD)
 
 //db connection
